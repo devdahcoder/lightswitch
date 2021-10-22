@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.App .switch--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  height: 113px;
+  max-width: 206px;
+  max-height: 114px;
+  background: linear-gradient(101deg, #263140 0%, #3a495f 10%);
+  box-shadow: -4px -4px 16px #26313F, 7px 7px 16px rgba(0, 0, 0, 0.25), inset 4px 4px 4px #1a2129;
+  border-radius: 18px;
+  padding: 2px;
+}
+
+.App .switch--container .switch--display {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(283.25deg, #263140 0%, #1a2129 100%);
+  box-shadow: -4px -4px 16px #26313F, 7px 7px 16px rgba(0, 0, 0, 0.25), inset 4px 4px 4px #1a2129;
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.App .switch--container .switch--display .switch--top--container {
+  height: 90px;
+  width: 135px;
+  background: linear-gradient(228.34deg, rgba(38, 49, 64, 0.2) 0.6%, rgba(26, 33, 41, 0.2) 53.37%), linear-gradient(99.82deg, #263140 36.44%, #2d3a49 71.95%);
+  box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  z-index: 10;
+  padding: 2px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.App .switch--container .switch--display .switch--top--container .switch--top--display {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(66.34deg, rgba(38, 49, 64, 0.2) 0.6%, rgba(26, 33, 41, 0.2) 53.37%), linear-gradient(283.82deg, #263140 36.44%, #2d3a49 71.95%);
+  box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+}
+
+.App .switch--container .switch--display .switch--top--container .switch--top--display .switch--mode {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.App .switch--container .switch--display .switch--top--container .switch--top--display .switch--mode .switch--mode--text {
+  font-size: 1rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(101.14deg, #263140 49.48%, #495c74 194.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App .switch--container .switch--display .switch--top--container .switch--top--display .switch--mode .switch--indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 100vh;
+  background: #f32b38;
+  box-shadow: 0px 0px 10px #f32b38;
+}
+
+.App .switch--container .switch--display .switch--top--container--on {
+  height: 90px;
+  width: 135px;
+  background: linear-gradient(66.34deg, rgba(38, 49, 64, 0.2) 0.6%, rgba(26, 33, 41, 0.2) 53.37%), linear-gradient(283.82deg, #263140 36.44%, #2d3a49 71.95%);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  z-index: 10;
+  padding: 2px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.App .switch--container .switch--display .switch--top--container--on .switch--top--display {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(66.34deg, rgba(38, 49, 64, 0.2) 0.6%, rgba(26, 33, 41, 0.2) 53.37%), linear-gradient(283.82deg, #263140 36.44%, #1a2129 71.95%);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+}
+
+.App .switch--container .switch--display .switch--top--container--on .switch--top--display .switch--mode {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.App .switch--container .switch--display .switch--top--container--on .switch--top--display .switch--mode .switch--mode--text {
+  font-size: 1rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(101.14deg, #263140 49.48%, #495c74 194.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App .switch--container .switch--display .switch--top--container--on .switch--top--display .switch--mode .switch--indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 100vh;
+  background: #2b3cf3;
+  box-shadow: 0px 0px 10px #2b3cf3;
+}
+
+.App .switch--container .switch--display .switch--bottom {
+  position: absolute;
+  box-shadow: 0px 1px 3px rgba(72, 72, 72, 0.42);
+  height: 90px;
+  width: 45px;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  background: linear-gradient(180deg, #1a2129 0%, #495c74 9.54%, #495c74 17.68%, #192028 100%);
+  box-shadow: 6px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 0px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 15px 15px 0px;
+}
+
+.App .switch--container .switch--display .switch--bottom--on {
+  position: absolute;
+  box-shadow: 0px 1px 3px rgba(72, 72, 72, 0.42);
+  height: 90px;
+  width: 45px;
+  top: 50%;
+  right: 140px;
+  transform: translate(0, -50%);
+  background: linear-gradient(180deg, #192028 0%, #495D75 9.54%, #495D75 17.68%, #192028 100%);
+  box-shadow: -4px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 0px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px 0px 0px 15px;
+}
+/*# sourceMappingURL=App.css.map */
